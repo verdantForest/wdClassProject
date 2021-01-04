@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    transition: all ease-in-out 250ms;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body,html {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin: 0;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: absolute;
+    margin: 1em;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background:#232323;
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.75rem;
+    margin: 0.75rem;
+    color: #ffffff;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #d3d3d3;
+    text-decoration: none;
+}
+
+.home-main {
+    background-image: url("/parrots/homebg.png");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height: 100%;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    color: white;
+    position: absolute;
+    left: 4.5em;
+    bottom: 1.5em;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-family: 'Fredoka One', cursive;
+}
+
+.button {
+    display:inline-block;
+    font-size: 1.25rem;
+    text-decoration:none;
+    border-width: 2px;
+    border-style:solid;
+    padding: .5em 1.75em;
+}
+
+.button-color {
+    color:#ffffff;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom:1.5em;
+}
+
+.title span {
+    font-weight: 300;
+    display: block;
+    font-size:0.5em;
+}
+
+.button-color:hover,
+.button-accent:focus {
+    color:#d3d3d3;
+    text-decoration: none;
+}
+
+.home-birds-textbox {
+    background-color: #232323;
+    padding: 2em;
+    width: 35%;
+    outline: 2px solid #ffffff;
+    outline-offset: -1.5em;
+    color:#ffffff;
+}
+
+@media (max-width: 800px) {
+    .home-birds-textbox {
+        background-color: #232323;
+        width: 100%;
+        outline: 2px solid #ffffff;
+        outline-offset: -1.5em;
+        color:#ffffff;
+    }
+    .home-birds{
+        background-image:url("/parrots/conure1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+    }
+    .home-birds-textbox p {
+        padding-top:1.5em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .home-birds-textbox p {
+        padding-top:1.5em;
+        text-align: left;
+    }
+    
+    .home-birds{
+        background-image:url("/parrots/conure1.png");
+        background-repeat: no-repeat;
+        padding: 5em;
+        background-size: cover;
+        margin: 0;
+        height: 100vh;  
+    }
+}
+
+.gallery {
+    margin: 0;
+}
+
+.gallery h1 {
+    font-size:30px;
+}
+
+.gal-item {
+    position: relative;
+    margin: 0;
+}
+
+.gal-item img {
+    display: block;
+    width: 100%; 
+}
+
+.gallery-desc {
+    position:absolute;
+    z-index: 100;
+    bottom: 0em;
+    left: 0em;
+    right: 0em;
+    color: white;
+    background: rgba(0,0,0,.25);
+    padding-bottom: 2em;
+    padding-top: .5em;
+}
+
+.gallery-desc p {
+    margin: 1em;
+    font-size: 22px;
+}
+
+.gal-item {
+    width: 33.3333334%;
+    float: left;
+    overflow: hidden;
+}
+
+.gallery-desc{
+    transform: translateY(150%);
+}
+
+.gal-item:hover .gallery-desc{
+    transform: translateY(0%);
+}
+
+.container {
+    width:95%;
+    margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+    .gal-item {
+        width: 50%;
+        float: left;
+    }
+    .container {
+        width:95%;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .gal-item {
+        width: 50%;
+        float: left;
+    }
+    .container {
+        width:95%;
+        margin: 0 auto;
+    }
+    .gallery-desc{
+        transform: translateY(150%);
+        border: transparent;
+    }
+    .gal-item:hover .gallery-desc{
+        transform: translateY(0%);
+        border: transparent;
+    }
+    .button-small {
+        border:none;
+        font-size: 16px;
+    }
+}
