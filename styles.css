@@ -90,6 +90,13 @@ nav a:focus {
     color:#ffffff;
 }
 
+.button-color-dark {
+    color:#232323;
+    font-size:2em;
+    border: #232323 2px solid;
+    margin: 0.5em;
+}
+
 .title {
     font-size: 2.5rem;
     font-weight: 900;
@@ -102,9 +109,13 @@ nav a:focus {
     font-size:0.5em;
 }
 
-.button-color:hover,
-.button-accent:focus {
+.button-color:hover {
     color:#d3d3d3;
+    text-decoration: none;
+}
+
+.button-color-dark:hover {
+    color: #323233;
     text-decoration: none;
 }
 
@@ -154,11 +165,13 @@ nav a:focus {
 }
 
 .gallery {
-    margin: 0;
+    margin: 1em;
+    display:block;
 }
 
 .gallery h1 {
     font-size:30px;
+
 }
 
 .gal-item {
@@ -231,6 +244,7 @@ nav a:focus {
     .gallery-desc{
         transform: translateY(150%);
         border: transparent;
+        padding-top: 2em;
     }
     .gal-item:hover .gallery-desc{
         transform: translateY(0%);
@@ -240,4 +254,13 @@ nav a:focus {
         border:none;
         font-size: 16px;
     }
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
+.blocked {
+    display: inline-block;
 }
